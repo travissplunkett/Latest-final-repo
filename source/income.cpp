@@ -88,6 +88,7 @@ PV::PV(){
     cout << "Is this photo or video? " << endl;
     cout << "(Enter nonnegative int for photo or negative int for video: ";
     int choice;
+    cin.ignore();
     cin >> choice;
     if(choice < 0){
         isPhoto = false;
