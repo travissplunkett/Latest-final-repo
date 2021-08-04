@@ -96,10 +96,9 @@ PV::PV(){
         isPhoto = true;
     }
     cout << "Name of income: ";
+    cin.ignore();
     getline(cin,name);
-    cin.ignore();
     cout << "Includes an hourly wage? yes/no: ";
-    cin.ignore();
     cin >> choice;
     if(choice < 0){
         cout << "No chosen. " << endl;
